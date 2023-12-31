@@ -13,7 +13,7 @@ Paso 3: Configuración
 
 Paso 4: Configuración de la Base de Datos
 1. Crea una nueva base de datos en tu servidor MySQL version 5,7 o superior llamada 'desis'.
-2. Importa el archivo de la carpeta de proyeto 'DB' nombre de archivo`db_desis.sql` proporcionado en el proyecto en tu base de datos recién creada.
+2. Importa el archivo de la carpeta de proyeto 'sql' nombre de archivo`db_desis.sql` proporcionado en el proyecto en tu base de datos recién creada.
 
 Paso 5: Ejecución
 4. Abre tu navegador y visita para equipo local como http://localhost/desis o la ruta del servidor apache que alla sido instalado el proyecto para ver el proyecto en funcionamiento.
