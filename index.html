@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SERVEL</title>
+  <!-- Enlace a Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/sweetalert.css" rel="stylesheet">
+</head>
+<body>
+  <br>
+  <div class="container" style="max-width: 700px;margin-top: 10px;">
+    <h2>FORMULARIO DE VOTACIÓN</h2>
+    <form name="form1" id="form1">
+      <div class="form-group">
+        <label for="campo1">Nombre y Apellido</label>
+        <input type="text" class="form-control" name="nomapellido" id="nomapellido" required placeholder="Ingrese nombre completo">
+      </div>
+      <div class="form-group">
+        <label for="campo2">Alias (Minimo 5 caracteres alfanumericos)</label>
+        <input type="text" class="form-control" name="alias" id="alias" required placeholder="Ingresa Alias" onchange="validarAlias(this)">
+      </div>
+      <div class="form-group">
+        <label for="campo3">RUT</label>
+        <input type="text" class="form-control" onchange="return Rut(this)" name="rut" id="rut" required placeholder="Ingresa Rut sin puntos y con guión">
+      </div>
+      <div class="form-group">
+        <label for="campo4">Email</label>
+        <input type="email" class="form-control" name="email" id="email" required placeholder="Ingresa correo electronico">
+      </div>
+      <div class="form-group">
+        <label for="campo5">Region</label>
+        <select class="form-control" name="regiones" id="regiones" required onclick="seleccion_comuna(this)"></select>
+      </div>
+      <div class="form-group">
+        <label for="campo6">Comuna</label>
+        <select class="form-control" name="comunas" id="comunas" required disabled>
+          <option>SELECCIONES REGION..</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="campo7">Candidato</label>
+        <select class="form-control" name="candidatos" id="candidatos" required></select>
+      </div>
+
+       <div class="form-group">
+       <label for="campo7">Como se entero de nosotros</label>
+        <input type="checkbox" name="web" id="opcion1" value="Web" class="grupo"><strong> Web </strong>
+        <input type="checkbox" name="tv" id="opcion2" value="TV" class="grupo"><strong> TV </strong>
+        <input type="checkbox" name="redes_sociales" id="opcion3" value="Redes Sociales" class="grupo"><strong> Redes Sociales </strong>
+        <input type="checkbox" name="amigo" id="opcion3" value="Amigo" class="grupo"><strong> Amigo </strong>
+      </div>
+
+      <button type="submit" class="btn btn-primary">VOTAR</button>
+      <br>
+
+    </form>
+    <footer class="footer mt-4"></footer>
+  </div>
+
+  <!-- Enlace a Bootstrap JS y Popper.js (requerido por Bootstrap) -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/sweetalert.min.js"></script>
+  <script src="js/validarut.js"></script> <!-- validador de rut -->
+  <script src="js/scripts.js"></script> <!-- funciones especiales para formulario -->
+
+</body>
+</html>
