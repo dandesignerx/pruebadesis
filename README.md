@@ -5,7 +5,7 @@ Asegúrate de tener instalado PHP verion minima 7,4 en tu sistema. Puedes verifi
 
 Paso 2: Descargar el Proyecto
 Descarga el archivo ZIP del proyecto desde el enlace proporcionado o clona el repositorio desde GitHub usando el siguiente comando:
-git clone https://github.com/tu_usuario/tu_proyecto.git
+git clone https://github.com/dandesignerx/pruebadesis.git
 
 Paso 3: Configuración
 1. Descomprime el proyecto en tu carpeta de servidor php como por ejemplo xampp, wampserver o tu servidor con apache linux.
