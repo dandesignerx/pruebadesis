@@ -12,7 +12,7 @@ Paso 3: Configuración
 2. Abre el archivo de la carpeta 'config' el archivo 'conexion.php' y actualiza las variables de base de datos por defecto esta con usuario 'root' sin clave de acceso.
 
 Paso 4: Configuración de la Base de Datos
-1. Crea una nueva base de datos en tu servidor MySQL version 5,7 o superior llamada 'desis'.
+1. Crea una nueva base de datos en tu servidor MySQL version 5,0 o superior llamada 'desis'.
 2. Importa el archivo de la carpeta de proyeto 'sql' nombre de archivo`db_desis.sql` proporcionado en el proyecto en tu base de datos recién creada.
 
 Paso 5: Ejecución
