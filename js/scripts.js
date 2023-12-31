@@ -104,7 +104,7 @@
                 if(datos=='OK'){ 
                   swal(
                   {   
-                  title: "VOTACIÓN REALIZADAS \n MUCHAS GRACIAS", 
+                  title: "VOTACIÓN REALIZADA \n MUCHAS GRACIAS", 
                   type: "success",
                   confirmButtonText: "Aceptar",
                   showConfirmButton: true 
@@ -114,7 +114,7 @@
                      window.location.href = "index.html";
                   });
 
-                }else{
+                }else if(datos=="ERROR"){
 
                   swal(
                   {   
@@ -128,7 +128,21 @@
                     window.location.href = "index.html";
                   });
 
-                }
+                 }else if(datos=="DUPLICADO"){
+
+                  swal(
+                  {   
+                  title: "RUT INGRESADO, VOTACION YA FUE REALIZADA.", 
+                  type: "warning",
+                  confirmButtonText: "Aceptar",
+                  showConfirmButton: true 
+                  },
+                  function()
+                  {
+                    window.location.href = "index.html";
+                  });
+
+                 }
 
               }
           });
