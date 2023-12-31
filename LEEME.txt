@@ -18,4 +18,7 @@ Paso 4: Configuración de la Base de Datos
 Paso 5: Ejecución
 4. Abre tu navegador y visita para equipo local como http://localhost/desis o la ruta del servidor apache que alla sido instalado el proyecto para ver el proyecto en funcionamiento.
 
+Paso 6: Documentación
+1 . La carpeta del proyecto 'doc' contiene la documentacion del proyecto.
+
 ¡Listo! Ahora deberías tener el proyecto de votaciones PHP funcionando.
