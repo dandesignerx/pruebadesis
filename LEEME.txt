@@ -1,7 +1,7 @@
 Instrucciones de Instalación:
 
 Paso 1: Requisitos Previos
-Asegúrate de tener instalado PHP verion minima 7,4 en tu sistema. Puedes verificar la instalación ejecutando `php -v` en la terminal o símbolo del sistema.
+Asegúrate de tener instalado PHP verion minima 7,0 en tu sistema. Puedes verificar la instalación ejecutando `php -v` en la terminal o símbolo del sistema.
 
 Paso 2: Descargar el Proyecto
 Descarga el archivo ZIP del proyecto desde el enlace proporcionado o clona el repositorio desde GitHub usando el siguiente comando:
