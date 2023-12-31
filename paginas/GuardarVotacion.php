@@ -1,6 +1,7 @@
 <?php
 session_start();
 include_once "../config/conexion.php";
+include_once "../paginas/Sanear.php";
 $link = conexion();
 
 // Datos a insertar
@@ -22,10 +23,10 @@ while ($row = mysqli_fetch_array($resp) ) {
 }
 
 $array = array( 
-				"nombre"      => $_POST['nomapellido'],
-				"alias"       => $_POST['alias'],
+				"nombre"      => limpiar_signos($_POST['nomapellido']),
+				"alias"       => limpiar_signos($_POST['alias']),
                 "rut"  		  => $_POST['rut'],
-                "email"       => $_POST['email'],
+                "email"       => limpiar_signos($_POST['email']),
                 "region"      => $region,
                 "comuna"      => $_POST['comunas'],
                 "candidato"   => $_POST['candidatos'],
